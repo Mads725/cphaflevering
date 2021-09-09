@@ -4,7 +4,7 @@ color roed = color(255,0,0);
 color gul = color(255,255,0);
 color groen = color(0,255,0);
 color graa = color(145,145,145);
-color sort = color(255,255,255);
+color sort = color(0,0,0);
 
 void setup(){
   size(200,400);
@@ -16,6 +16,7 @@ void setup(){
 
 void draw(){
   
+  fill(sort);
   rect(25,25,150,350);
   
   if (mode == "static") { 
@@ -38,7 +39,6 @@ void draw(){
         circle(100,200,100);
         fill(graa);
         circle(100,300,100);
-        fill(sort);
         count++;
       }else{
         fill(graa);
@@ -47,7 +47,6 @@ void draw(){
         circle(100,200,100);
         fill(groen);
         circle(100,300,100);
-        fill(sort);
         count++;
       }
     
